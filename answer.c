@@ -11,6 +11,10 @@ void hindu(int n)
 //Roman numerals
 void roman(int n)
 {
+    if(n<=0){
+        printf("Invalid Input");
+    }
+    else{
     while (n != 0)
     {
         if (n >= 1000)
@@ -90,17 +94,22 @@ void roman(int n)
             printf("I");
             n -= 1;
         }
+        }
     }
     return;
 }
 
 //Unary number
 void unary(int n)
-{
+{   if(n<=0){
+    printf("Invalid Input");
+}
+else{
     for (int i = 0; i < n; i++)
     {
         printf("I");
     }
+}
     return;
 }
 
